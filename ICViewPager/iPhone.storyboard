@@ -1,19 +1,26 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="KZy-Tn-xJf">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="KZy-Tn-xJf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
-        <development version="4600" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Host View Controller-->
         <scene sceneID="g03-yH-dE6">
             <objects>
                 <viewController id="whP-ZF-81a" customClass="HostViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AWB-dB-VQI"/>
+                        <viewControllerLayoutGuide type="bottom" id="wXn-ex-2TB"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="p79-qC-JP8">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="YAa-eJ-UDG"/>
                 </viewController>
@@ -25,12 +32,16 @@
         <scene sceneID="QBj-5a-OaV">
             <objects>
                 <viewController storyboardIdentifier="contentViewController" id="eBC-7F-5HC" customClass="ContentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iqa-eg-kH5"/>
+                        <viewControllerLayoutGuide type="bottom" id="D4h-D4-iXo"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Rhb-jG-fQ8">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAg-1K-keU">
-                                <rect key="frame" x="20" y="20" width="280" height="32"/>
+                                <rect key="frame" x="20" y="20" width="335" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Y76-9v-Umn"/>
                                 </constraints>
@@ -39,11 +50,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="dAg-1K-keU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="NKg-px-ryJ"/>
-                            <constraint firstItem="dAg-1K-keU" firstAttribute="top" secondItem="Rhb-jG-fQ8" secondAttribute="top" constant="20" symbolic="YES" type="default" id="aTN-V5-W4B"/>
-                            <constraint firstItem="dAg-1K-keU" firstAttribute="leading" secondItem="Rhb-jG-fQ8" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="yRY-Du-d0N"/>
+                            <constraint firstAttribute="trailing" secondItem="dAg-1K-keU" secondAttribute="trailing" constant="20" symbolic="YES" id="NKg-px-ryJ"/>
+                            <constraint firstItem="dAg-1K-keU" firstAttribute="top" secondItem="Rhb-jG-fQ8" secondAttribute="top" constant="20" symbolic="YES" id="aTN-V5-W4B"/>
+                            <constraint firstItem="dAg-1K-keU" firstAttribute="leading" secondItem="Rhb-jG-fQ8" secondAttribute="leading" constant="20" symbolic="YES" id="yRY-Du-d0N"/>
                         </constraints>
                     </view>
                     <connections>
@@ -60,7 +71,7 @@
                 <navigationController id="KZy-Tn-xJf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RE8-Z8-Ct9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -73,9 +84,4 @@
             <point key="canvasLocation" x="50" y="53"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
